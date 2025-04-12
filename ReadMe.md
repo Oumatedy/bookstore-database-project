@@ -44,11 +44,14 @@ To create a robust relational database for managing bookstore operations, includ
 bookstore-database-project/
 ├── README.md
 ├── schema/
+|   ├── README.md
 │   └── create_tables.sql
 ├── queries/
 │   └── test_queries.sql
 ├── users/
-│   └── user_roles.sql
+|   ├── README.md
+|   ├── user_roles.sql
+│   └── user_permissions.sql
 ├── docs/
 │   └── ERD.png
 ```
