@@ -22,21 +22,22 @@ To create a robust relational database for managing bookstore operations, includ
 - Familiarity with user management and permissions in MySQL
 
 ## 📦 Tables Included
-- **book**
-- **book_author**
-- **author**
-- **book_language**
-- **publisher**
-- **customer**
-- **customer_address**
-- **address_status**
-- **address**
-- **country**
-- **cust_order**
-- **order_line**
-- **shipping_method**
-- **order_history**
-- **order_status**
+- **book**: A list of all books available in the store.
+- **book_author**: A table to manage the many-to-many relationship between books and authors.
+- **author**: A list of all authors.
+- **book_language**: A list of the possible languages of books.
+- **publisher**: A list of publishers for books.
+- **customer**: A list of the bookstore's customers.
+- **customer_address**: A list of addresses for customers. Each customer can have multiple addresses.
+- **publisher_address**: A list of addresses for publishers. Each publisher can have multiple addresses.
+- **address_status**: A list of statuses for an address (e.g., current, old).
+- **address**: A list of all addresses in the system.
+- **country**: A list of countries where the addresses are located.
+- **cust_order**: A list of orders placed by customers.
+- **order_line**: A list of books that are part of each order.
+- **shipping_method**: A list of possible shipping methods for an order.
+- **order_history**: A record of the history of an order (e.g., ordered, cancelled, delivered).
+- **order_status**: A list of possible statuses for an order (e.g., pending, shipped, delivered). 
 
 ## 🧩 Folder Structure
 ```
@@ -67,9 +68,9 @@ bookstore-database-project/
 - Role-based access for managing security
 
 ## 👥 Contributors
-- **Tedy Ouma**
-- **Otachi Bosibori**
-- **Celestine Waithera**
+- **Tedy Ouma** - [GitHub](https://github.com/Oumatedy)
+- **Otachi Bosibori** - [GitHub](https://github.com/BunnyeNyash)
+- **Celestine Waithera** - [GitHub](https://github.com/Celestinewanjiru)
 
 ---
 Feel free to contribute, and make improvements to enhance this bookstore system!
