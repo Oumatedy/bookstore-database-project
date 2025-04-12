@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Bookstore ERD" id="bookstore-erd">
+    <mxGraphModel dx="1108" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="book" value="Book" style="shape=swimlane;fillColor=#DAE8FC;" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="author" value="Author" style="shape=swimlane;fillColor=#E1D5E7;" parent="1" vertex="1">
+          <mxGeometry x="280" y="40" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="book_author" value="Book_Author" style="shape=swimlane;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="160" y="330" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" value="Customer" style="shape=swimlane;fillColor=#D5E8D4;" parent="1" vertex="1">
+          <mxGeometry x="480" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="address" value="Address" style="shape=swimlane;fillColor=#F8CECC;" parent="1" vertex="1">
+          <mxGeometry x="480" y="240" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cust_order" value="Cust_Order" style="shape=swimlane;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="680" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="order_line" value="Order_Line" style="shape=swimlane;fillColor=#E1D5E7;" parent="1" vertex="1">
+          <mxGeometry x="910" y="10" width="210" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="order_status" value="Order_Status" style="shape=swimlane;fillColor=#DAE8FC;" parent="1" vertex="1">
+          <mxGeometry x="680" y="300" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="order_history" value="Order_History" style="shape=swimlane;fillColor=#D5E8D4;" parent="1" vertex="1">
+          <mxGeometry x="910" y="380" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;✔️ Security &amp;amp; User Roles: &lt;/b&gt;&lt;i&gt;Implemented in SQL post-design (not shown in ERD)&lt;/i&gt;" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="320" y="670" width="520" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="book" target="book_author" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="author" target="book_author" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="customer" target="address" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="customer" target="cust_order" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="cust_order" target="order_line" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="cust_order" target="order_status" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" style="endArrow=blockThin;rounded=0;orthogonal=0;jettySize=auto;html=1;exitX=0.5;exitY=0.95;exitDx=0;exitDy=0;" parent="1" source="cust_order" target="order_history" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
