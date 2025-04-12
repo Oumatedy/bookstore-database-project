@@ -1,4 +1,4 @@
-create database BookStoreDB;
+CREATE DATABASE BookStoreDB;
 USE BookStoreDB;
 
 --
