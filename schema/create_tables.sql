@@ -1,5 +1,5 @@
 create database BookStoreDB;
-use BookStoreDB;
+USE BookStoreDB;
 
 --
 -- tables
