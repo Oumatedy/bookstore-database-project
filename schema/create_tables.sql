@@ -1,6 +1,7 @@
 CREATE DATABASE BookStoreDB;
 USE BookStoreDB;
 
+
 --
 -- tables
 -- 1. book: A list of all books available in the store.
