@@ -4,6 +4,7 @@
 
 USE BookStoreDB;
 
+
 -- 1. Countries
 INSERT INTO country (country_name) VALUES
 ('Kenya'), ('Uganda'), ('Tanzania'), ('Nigeria'), ('South Africa'),

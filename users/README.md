@@ -24,3 +24,4 @@ This document outlines the common user roles and their associated permissions fo
 - Provide `report_viewer` access to business users or analysts needing reports.
 - Limit `guest_user` to public or audit-safe read operations.
 
+

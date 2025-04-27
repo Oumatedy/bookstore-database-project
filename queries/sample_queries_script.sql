@@ -2,6 +2,7 @@
 -- 📊 Verification/Analytical sample Queries
 -- ==============================================
 
+
 -- Verification Queries
 SELECT * FROM book WHERE stock_quantity < 5;
 SELECT * FROM cust_order WHERE total_amount > 20;
